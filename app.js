@@ -3,7 +3,7 @@ const express = require('express');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/Healthy', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://olgaluk:<123456olga>@cluster0-8rvl3.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 mongoose.set('useCreateIndex', true);
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
